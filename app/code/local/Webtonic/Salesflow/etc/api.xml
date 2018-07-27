@@ -1,0 +1,38 @@
+<config>
+    <api>
+        <resources>
+            <checkout translate="title" module="checkout">
+                <title>Checkout Resource</title>
+                <methods>
+                    <info translate="title" module="checkout">
+                        <title>Create subscription</title>
+                    </info>
+                </methods>
+
+
+                <faults module="checkout">
+                    <data_invalid>
+                        <code>500</code>
+                        <message>Invalid/Incomplete data.</message>
+                    </data_invalid>
+                    <authenticantion_failed>
+                        <code>404</code>
+                        <message>You could not be authenticated.</message>
+                    </authenticantion_failed>
+
+                </faults>
+
+            </checkout>
+
+
+
+
+        </resources>
+        <acl>
+            <resources>
+                <all>
+                </all>
+            </resources>
+        </acl>
+    </api>
+</config>
